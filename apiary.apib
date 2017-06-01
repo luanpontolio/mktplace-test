@@ -1470,9 +1470,13 @@ HOST: http://polls.apiblueprint.org/
 
 
 
-## Buscape GET de pedidos POR ID [/buscape/orders/v2/1]
+## Buscape GET de pedidos POR ID [/buscape/orders/v2/{id}]
 
 ### Buscape GET orders POR ID [GET]
+
++ Parameters
+
+    + token
 
 + Response 200 (application/json)
 
@@ -1621,9 +1625,13 @@ HOST: http://polls.apiblueprint.org/
 
 
 
-## Buscape POST de pedido [/buscape/notifications/notify_order_buscape]
+## Buscape POST de pedido [/buscape/notifications/{token}/notify_order_buscape]
 
 ### Buscape POST Pedido [POST]
+
++ Parameters
+
+    + token
 
 + Request (application/json)
 
@@ -1642,19 +1650,15 @@ HOST: http://polls.apiblueprint.org/
 
 + Response 201 (application/json)
 
-    + Headers
 
-            app-token: S0JQ9E6q4hve
-            
     + Body
 
             {
-               "eventDate":"2017-06-1",
-               "sellerId":"01",
-               "orderUri":"teste",
-               "order": {"orderID": "1", "orderStatus": "NEW"}
+              "message_response": true,
+              "data_response": {
+                "success": true
+              }
             }
-
 
 
 ## Buscape POST ACEITE [/buscape/acceptence]
