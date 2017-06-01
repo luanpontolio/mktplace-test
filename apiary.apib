@@ -1621,7 +1621,7 @@ HOST: http://polls.apiblueprint.org/
 
 
 
-## Buscape POST de pedido [/buscape/order]
+## Buscape POST de pedido [/buscape/notifications/notify_order_buscape]
 
 ### Buscape POST Pedido [POST]
 
@@ -1634,10 +1634,10 @@ HOST: http://polls.apiblueprint.org/
     + Body
     
             {
-               "eventDate":"date",
-               "sellerId":"number",
-               "orderUri":"string",
-               "order":"order"
+               "eventDate":"2017-06-1",
+               "sellerId":"01",
+               "orderUri":"teste",
+               "order": {"orderID": "1", "orderStatus": "NEW"}
             }
 
 + Response 200 (application/json)
