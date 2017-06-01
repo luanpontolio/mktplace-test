@@ -1,0 +1,115 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# Buscape Orders NEW
+
+## Buscape GET de pedidos NEW [/buscape/orders/v2/status/new]
+
+### Buscape GET orders NEW [GET]
+
++ Response 200 (application/json)
+
+        {
+            "orderID":"01_string",
+            "orderStatus":"new",
+            "orderedItems":[
+                {
+                "sku":"10",
+                "skuSellerId":"100_string",
+                "quantity":"10",
+                "price":"100.0",
+                "discount":"10.0"
+                }
+            ],
+            "paymentMethods":[
+                {
+                "method":"string",
+                "amount":"number",
+                "installments":"number",
+                "paymentDueAt":"date",
+                "approvedAt":"date"
+                }
+            ],
+            "sellerOrder":"string",
+            "totalFreight":"number",
+            "purchaseAt":"date",
+            "lastUpdateAt":"date",
+            "clientProfileData":{
+                "email":"string",
+                "firstName":"string",
+                "lastName":"string",
+                "documentType":"string",
+                "document":"string",
+                "phone":"number",
+                "corporate":{
+                "name":"string",
+                "tradeName":"string",
+                "stateInscription":"string",
+                "phone":"string"
+            }
+            },
+           "shippingInfo":[
+              {
+                 "address":{
+                    "addressType":"string",
+                    "receiverName":"string",
+                    "postalCode":"string",
+                    "city":"string",
+                    "state":"string",
+                    "country":"string",
+                    "street":"string",
+                    "number":"string",
+                    "neighborhood":"string",
+                    "complement":"string",
+                    "reference":"string"
+             },
+         "deliveries":[
+            {
+               "item":{
+                  "sku":"string",
+                  "skuSellerId":"string"
+               },
+               "selectedSla":"string",
+               "lockTTL":"number",
+               "otd":{
+                  "shippingEstimate":"number",
+                  "transitTime":"number",
+                  "crossDockingTime":"number",
+                  "scheduledAt":"date",
+                  "scheduledPeriod":"string"
+               },
+               "trackingNumber":"string",
+               "sellerDeliveryId":"string",
+               "freightPrice":"number",
+               "freightCost":"number",
+               "additionalInfo":"string",
+               "carrier":{
+                  "name":"string",
+                  "cnpj":"string"
+               },
+               "tracking":{
+                  "description":"string",
+                  "occurredAt":"date",
+                  "controlPoint":"string"
+               },
+               "invoice" : {
+                  "number": "number",
+                  "value": "number",
+                  "url": "string",
+                  "issuanceDate": "date",
+                  "invoiceKey": "string"
+               },
+               "giftWrap":{
+                  "available":"number",
+                  "value":"number",
+                  "giftCard":{
+                     "from":"string",
+                     "to":"string",
+                     "message":"string"
+                  }
+               }
+            }
+         ]
+        }
+        ]
+        }
