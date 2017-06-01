@@ -113,3 +113,1616 @@ HOST: http://polls.apiblueprint.org/
         }
         ]
         }
+
+
+# Buscape Orders ACCEPT
+
+## Buscape GET de pedidos ACCEPT [buscape/orders/v2/status/accept]
+
+### Buscape GET orders ACCEPT [GET]
+
++ Response 200 (application/json)
+
+        {
+            "orderID":"string",
+            "orderStatus":"string",
+            "orderedItems":[
+                {
+                "sku":"number",
+                "skuSellerId":"string",
+                "quantity":"number",
+                "price":"number",
+                "discount":"number"
+                }
+            ],
+            "paymentMethods":[
+                {
+                "method":"string",
+                "amount":"number",
+                "installments":"number",
+                "paymentDueAt":"date",
+                "approvedAt":"date"
+                }
+            ],
+            "sellerOrder":"string",
+            "totalFreight":"number",
+            "purchaseAt":"date",
+            "lastUpdateAt":"date",
+            "clientProfileData":{
+                "email":"string",
+                "firstName":"string",
+                "lastName":"string",
+                "documentType":"string",
+                "document":"string",
+                "phone":"number",
+                "corporate":{
+                "name":"string",
+                "tradeName":"string",
+                "stateInscription":"string",
+                "phone":"string"
+            }
+            },
+           "shippingInfo":[
+              {
+                 "address":{
+                    "addressType":"string",
+                    "receiverName":"string",
+                    "postalCode":"string",
+                    "city":"string",
+                    "state":"string",
+                    "country":"string",
+                    "street":"string",
+                    "number":"string",
+                    "neighborhood":"string",
+                    "complement":"string",
+                    "reference":"string"
+             },
+         "deliveries":[
+            {
+               "item":{
+                  "sku":"string",
+                  "skuSellerId":"string"
+               },
+               "selectedSla":"string",
+               "lockTTL":"number",
+               "otd":{
+                  "shippingEstimate":"number",
+                  "transitTime":"number",
+                  "crossDockingTime":"number",
+                  "scheduledAt":"date",
+                  "scheduledPeriod":"string"
+               },
+               "trackingNumber":"string",
+               "sellerDeliveryId":"string",
+               "freightPrice":"number",
+               "freightCost":"number",
+               "additionalInfo":"string",
+               "carrier":{
+                  "name":"string",
+                  "cnpj":"string"
+               },
+               "tracking":{
+                  "description":"string",
+                  "occurredAt":"date",
+                  "controlPoint":"string"
+               },
+               "invoice" : {
+                  "number": "number",
+                  "value": "number",
+                  "url": "string",
+                  "issuanceDate": "date",
+                  "invoiceKey": "string"
+               },
+               "giftWrap":{
+                  "available":"number",
+                  "value":"number",
+                  "giftCard":{
+                     "from":"string",
+                     "to":"string",
+                     "message":"string"
+                  }
+               }
+            }
+         ]
+        }
+        ]
+        }
+
+
+# Buscape Orders NOT ACCEPT
+
+## Buscape GET de pedidos NOT ACCEPT [/orders/v2/status/not_accept]
+
+### Buscape GET orders NOT ACCEPT [GET]
+
++ Response 200 (application/json)
+
+        {
+            "orderID":"string",
+            "orderStatus":"string",
+            "orderedItems":[
+                {
+                "sku":"number",
+                "skuSellerId":"string",
+                "quantity":"number",
+                "price":"number",
+                "discount":"number"
+                }
+            ],
+            "paymentMethods":[
+                {
+                "method":"string",
+                "amount":"number",
+                "installments":"number",
+                "paymentDueAt":"date",
+                "approvedAt":"date"
+                }
+            ],
+            "sellerOrder":"string",
+            "totalFreight":"number",
+            "purchaseAt":"date",
+            "lastUpdateAt":"date",
+            "clientProfileData":{
+                "email":"string",
+                "firstName":"string",
+                "lastName":"string",
+                "documentType":"string",
+                "document":"string",
+                "phone":"number",
+                "corporate":{
+                "name":"string",
+                "tradeName":"string",
+                "stateInscription":"string",
+                "phone":"string"
+            }
+            },
+           "shippingInfo":[
+              {
+                 "address":{
+                    "addressType":"string",
+                    "receiverName":"string",
+                    "postalCode":"string",
+                    "city":"string",
+                    "state":"string",
+                    "country":"string",
+                    "street":"string",
+                    "number":"string",
+                    "neighborhood":"string",
+                    "complement":"string",
+                    "reference":"string"
+             },
+         "deliveries":[
+            {
+               "item":{
+                  "sku":"string",
+                  "skuSellerId":"string"
+               },
+               "selectedSla":"string",
+               "lockTTL":"number",
+               "otd":{
+                  "shippingEstimate":"number",
+                  "transitTime":"number",
+                  "crossDockingTime":"number",
+                  "scheduledAt":"date",
+                  "scheduledPeriod":"string"
+               },
+               "trackingNumber":"string",
+               "sellerDeliveryId":"string",
+               "freightPrice":"number",
+               "freightCost":"number",
+               "additionalInfo":"string",
+               "carrier":{
+                  "name":"string",
+                  "cnpj":"string"
+               },
+               "tracking":{
+                  "description":"string",
+                  "occurredAt":"date",
+                  "controlPoint":"string"
+               },
+               "invoice" : {
+                  "number": "number",
+                  "value": "number",
+                  "url": "string",
+                  "issuanceDate": "date",
+                  "invoiceKey": "string"
+               },
+               "giftWrap":{
+                  "available":"number",
+                  "value":"number",
+                  "giftCard":{
+                     "from":"string",
+                     "to":"string",
+                     "message":"string"
+                  }
+               }
+            }
+         ]
+        }
+        ]
+        }
+
+
+# Buscape Orders PENDING
+
+## Buscape GET de pedidos PENDING [/orders/v2/status/pending]
+
+### Buscape GET orders PENDING [GET]
+
++ Response 200 (application/json)
+
+        {
+            "orderID":"string",
+            "orderStatus":"string",
+            "orderedItems":[
+                {
+                "sku":"number",
+                "skuSellerId":"string",
+                "quantity":"number",
+                "price":"number",
+                "discount":"number"
+                }
+            ],
+            "paymentMethods":[
+                {
+                "method":"string",
+                "amount":"number",
+                "installments":"number",
+                "paymentDueAt":"date",
+                "approvedAt":"date"
+                }
+            ],
+            "sellerOrder":"string",
+            "totalFreight":"number",
+            "purchaseAt":"date",
+            "lastUpdateAt":"date",
+            "clientProfileData":{
+                "email":"string",
+                "firstName":"string",
+                "lastName":"string",
+                "documentType":"string",
+                "document":"string",
+                "phone":"number",
+                "corporate":{
+                "name":"string",
+                "tradeName":"string",
+                "stateInscription":"string",
+                "phone":"string"
+            }
+            },
+           "shippingInfo":[
+              {
+                 "address":{
+                    "addressType":"string",
+                    "receiverName":"string",
+                    "postalCode":"string",
+                    "city":"string",
+                    "state":"string",
+                    "country":"string",
+                    "street":"string",
+                    "number":"string",
+                    "neighborhood":"string",
+                    "complement":"string",
+                    "reference":"string"
+             },
+         "deliveries":[
+            {
+               "item":{
+                  "sku":"string",
+                  "skuSellerId":"string"
+               },
+               "selectedSla":"string",
+               "lockTTL":"number",
+               "otd":{
+                  "shippingEstimate":"number",
+                  "transitTime":"number",
+                  "crossDockingTime":"number",
+                  "scheduledAt":"date",
+                  "scheduledPeriod":"string"
+               },
+               "trackingNumber":"string",
+               "sellerDeliveryId":"string",
+               "freightPrice":"number",
+               "freightCost":"number",
+               "additionalInfo":"string",
+               "carrier":{
+                  "name":"string",
+                  "cnpj":"string"
+               },
+               "tracking":{
+                  "description":"string",
+                  "occurredAt":"date",
+                  "controlPoint":"string"
+               },
+               "invoice" : {
+                  "number": "number",
+                  "value": "number",
+                  "url": "string",
+                  "issuanceDate": "date",
+                  "invoiceKey": "string"
+               },
+               "giftWrap":{
+                  "available":"number",
+                  "value":"number",
+                  "giftCard":{
+                     "from":"string",
+                     "to":"string",
+                     "message":"string"
+                  }
+               }
+            }
+         ]
+        }
+        ]
+        }
+
+
+# Buscape Orders APPROVED
+
+## Buscape GET de pedidos APPROVED [/orders/v2/status/approved]
+
+### Buscape GET orders APPROVED [GET]
+
++ Response 200 (application/json)
+
+        {
+            "orderID":"string",
+            "orderStatus":"string",
+            "orderedItems":[
+                {
+                "sku":"number",
+                "skuSellerId":"string",
+                "quantity":"number",
+                "price":"number",
+                "discount":"number"
+                }
+            ],
+            "paymentMethods":[
+                {
+                "method":"string",
+                "amount":"number",
+                "installments":"number",
+                "paymentDueAt":"date",
+                "approvedAt":"date"
+                }
+            ],
+            "sellerOrder":"string",
+            "totalFreight":"number",
+            "purchaseAt":"date",
+            "lastUpdateAt":"date",
+            "clientProfileData":{
+                "email":"string",
+                "firstName":"string",
+                "lastName":"string",
+                "documentType":"string",
+                "document":"string",
+                "phone":"number",
+                "corporate":{
+                "name":"string",
+                "tradeName":"string",
+                "stateInscription":"string",
+                "phone":"string"
+            }
+            },
+           "shippingInfo":[
+              {
+                 "address":{
+                    "addressType":"string",
+                    "receiverName":"string",
+                    "postalCode":"string",
+                    "city":"string",
+                    "state":"string",
+                    "country":"string",
+                    "street":"string",
+                    "number":"string",
+                    "neighborhood":"string",
+                    "complement":"string",
+                    "reference":"string"
+             },
+         "deliveries":[
+            {
+               "item":{
+                  "sku":"string",
+                  "skuSellerId":"string"
+               },
+               "selectedSla":"string",
+               "lockTTL":"number",
+               "otd":{
+                  "shippingEstimate":"number",
+                  "transitTime":"number",
+                  "crossDockingTime":"number",
+                  "scheduledAt":"date",
+                  "scheduledPeriod":"string"
+               },
+               "trackingNumber":"string",
+               "sellerDeliveryId":"string",
+               "freightPrice":"number",
+               "freightCost":"number",
+               "additionalInfo":"string",
+               "carrier":{
+                  "name":"string",
+                  "cnpj":"string"
+               },
+               "tracking":{
+                  "description":"string",
+                  "occurredAt":"date",
+                  "controlPoint":"string"
+               },
+               "invoice" : {
+                  "number": "number",
+                  "value": "number",
+                  "url": "string",
+                  "issuanceDate": "date",
+                  "invoiceKey": "string"
+               },
+               "giftWrap":{
+                  "available":"number",
+                  "value":"number",
+                  "giftCard":{
+                     "from":"string",
+                     "to":"string",
+                     "message":"string"
+                  }
+               }
+            }
+         ]
+        }
+        ]
+        }
+
+
+# Buscape Orders NOT APPROVED
+
+## Buscape GET de pedidos NOT APPROVED [/orders/v2/status/not_approved]
+
+### Buscape GET orders NOT APPROVED [GET]
+
++ Response 200 (application/json)
+
+        {
+            "orderID":"string",
+            "orderStatus":"string",
+            "orderedItems":[
+                {
+                "sku":"number",
+                "skuSellerId":"string",
+                "quantity":"number",
+                "price":"number",
+                "discount":"number"
+                }
+            ],
+            "paymentMethods":[
+                {
+                "method":"string",
+                "amount":"number",
+                "installments":"number",
+                "paymentDueAt":"date",
+                "approvedAt":"date"
+                }
+            ],
+            "sellerOrder":"string",
+            "totalFreight":"number",
+            "purchaseAt":"date",
+            "lastUpdateAt":"date",
+            "clientProfileData":{
+                "email":"string",
+                "firstName":"string",
+                "lastName":"string",
+                "documentType":"string",
+                "document":"string",
+                "phone":"number",
+                "corporate":{
+                "name":"string",
+                "tradeName":"string",
+                "stateInscription":"string",
+                "phone":"string"
+            }
+            },
+           "shippingInfo":[
+              {
+                 "address":{
+                    "addressType":"string",
+                    "receiverName":"string",
+                    "postalCode":"string",
+                    "city":"string",
+                    "state":"string",
+                    "country":"string",
+                    "street":"string",
+                    "number":"string",
+                    "neighborhood":"string",
+                    "complement":"string",
+                    "reference":"string"
+             },
+         "deliveries":[
+            {
+               "item":{
+                  "sku":"string",
+                  "skuSellerId":"string"
+               },
+               "selectedSla":"string",
+               "lockTTL":"number",
+               "otd":{
+                  "shippingEstimate":"number",
+                  "transitTime":"number",
+                  "crossDockingTime":"number",
+                  "scheduledAt":"date",
+                  "scheduledPeriod":"string"
+               },
+               "trackingNumber":"string",
+               "sellerDeliveryId":"string",
+               "freightPrice":"number",
+               "freightCost":"number",
+               "additionalInfo":"string",
+               "carrier":{
+                  "name":"string",
+                  "cnpj":"string"
+               },
+               "tracking":{
+                  "description":"string",
+                  "occurredAt":"date",
+                  "controlPoint":"string"
+               },
+               "invoice" : {
+                  "number": "number",
+                  "value": "number",
+                  "url": "string",
+                  "issuanceDate": "date",
+                  "invoiceKey": "string"
+               },
+               "giftWrap":{
+                  "available":"number",
+                  "value":"number",
+                  "giftCard":{
+                     "from":"string",
+                     "to":"string",
+                     "message":"string"
+                  }
+               }
+            }
+         ]
+        }
+        ]
+        }
+
+
+# Buscape Orders CANCELLED
+
+## Buscape GET de pedidos CANCELLED [/orders/v2/status/cancelled]
+
+### Buscape GET orders CANCELLED [GET]
+
++ Response 200 (application/json)
+
+        {
+            "orderID":"string",
+            "orderStatus":"string",
+            "orderedItems":[
+                {
+                "sku":"number",
+                "skuSellerId":"string",
+                "quantity":"number",
+                "price":"number",
+                "discount":"number"
+                }
+            ],
+            "paymentMethods":[
+                {
+                "method":"string",
+                "amount":"number",
+                "installments":"number",
+                "paymentDueAt":"date",
+                "approvedAt":"date"
+                }
+            ],
+            "sellerOrder":"string",
+            "totalFreight":"number",
+            "purchaseAt":"date",
+            "lastUpdateAt":"date",
+            "clientProfileData":{
+                "email":"string",
+                "firstName":"string",
+                "lastName":"string",
+                "documentType":"string",
+                "document":"string",
+                "phone":"number",
+                "corporate":{
+                "name":"string",
+                "tradeName":"string",
+                "stateInscription":"string",
+                "phone":"string"
+            }
+            },
+           "shippingInfo":[
+              {
+                 "address":{
+                    "addressType":"string",
+                    "receiverName":"string",
+                    "postalCode":"string",
+                    "city":"string",
+                    "state":"string",
+                    "country":"string",
+                    "street":"string",
+                    "number":"string",
+                    "neighborhood":"string",
+                    "complement":"string",
+                    "reference":"string"
+             },
+         "deliveries":[
+            {
+               "item":{
+                  "sku":"string",
+                  "skuSellerId":"string"
+               },
+               "selectedSla":"string",
+               "lockTTL":"number",
+               "otd":{
+                  "shippingEstimate":"number",
+                  "transitTime":"number",
+                  "crossDockingTime":"number",
+                  "scheduledAt":"date",
+                  "scheduledPeriod":"string"
+               },
+               "trackingNumber":"string",
+               "sellerDeliveryId":"string",
+               "freightPrice":"number",
+               "freightCost":"number",
+               "additionalInfo":"string",
+               "carrier":{
+                  "name":"string",
+                  "cnpj":"string"
+               },
+               "tracking":{
+                  "description":"string",
+                  "occurredAt":"date",
+                  "controlPoint":"string"
+               },
+               "invoice" : {
+                  "number": "number",
+                  "value": "number",
+                  "url": "string",
+                  "issuanceDate": "date",
+                  "invoiceKey": "string"
+               },
+               "giftWrap":{
+                  "available":"number",
+                  "value":"number",
+                  "giftCard":{
+                     "from":"string",
+                     "to":"string",
+                     "message":"string"
+                  }
+               }
+            }
+         ]
+        }
+        ]
+        }
+
+
+# Buscape Orders INVOICED
+
+## Buscape GET de pedidos INVOICED [/orders/v2/status/invoiced]
+
+### Buscape GET orders INVOICED [GET]
+
++ Response 200 (application/json)
+
+        {
+            "orderID":"string",
+            "orderStatus":"string",
+            "orderedItems":[
+                {
+                "sku":"number",
+                "skuSellerId":"string",
+                "quantity":"number",
+                "price":"number",
+                "discount":"number"
+                }
+            ],
+            "paymentMethods":[
+                {
+                "method":"string",
+                "amount":"number",
+                "installments":"number",
+                "paymentDueAt":"date",
+                "approvedAt":"date"
+                }
+            ],
+            "sellerOrder":"string",
+            "totalFreight":"number",
+            "purchaseAt":"date",
+            "lastUpdateAt":"date",
+            "clientProfileData":{
+                "email":"string",
+                "firstName":"string",
+                "lastName":"string",
+                "documentType":"string",
+                "document":"string",
+                "phone":"number",
+                "corporate":{
+                "name":"string",
+                "tradeName":"string",
+                "stateInscription":"string",
+                "phone":"string"
+            }
+            },
+           "shippingInfo":[
+              {
+                 "address":{
+                    "addressType":"string",
+                    "receiverName":"string",
+                    "postalCode":"string",
+                    "city":"string",
+                    "state":"string",
+                    "country":"string",
+                    "street":"string",
+                    "number":"string",
+                    "neighborhood":"string",
+                    "complement":"string",
+                    "reference":"string"
+             },
+         "deliveries":[
+            {
+               "item":{
+                  "sku":"string",
+                  "skuSellerId":"string"
+               },
+               "selectedSla":"string",
+               "lockTTL":"number",
+               "otd":{
+                  "shippingEstimate":"number",
+                  "transitTime":"number",
+                  "crossDockingTime":"number",
+                  "scheduledAt":"date",
+                  "scheduledPeriod":"string"
+               },
+               "trackingNumber":"string",
+               "sellerDeliveryId":"string",
+               "freightPrice":"number",
+               "freightCost":"number",
+               "additionalInfo":"string",
+               "carrier":{
+                  "name":"string",
+                  "cnpj":"string"
+               },
+               "tracking":{
+                  "description":"string",
+                  "occurredAt":"date",
+                  "controlPoint":"string"
+               },
+               "invoice" : {
+                  "number": "number",
+                  "value": "number",
+                  "url": "string",
+                  "issuanceDate": "date",
+                  "invoiceKey": "string"
+               },
+               "giftWrap":{
+                  "available":"number",
+                  "value":"number",
+                  "giftCard":{
+                     "from":"string",
+                     "to":"string",
+                     "message":"string"
+                  }
+               }
+            }
+         ]
+        }
+        ]
+        }
+
+
+# Buscape Orders IN HOSTING
+
+## Buscape GET de pedidos IN HOSTING [/orders/v2/status/in_hosting]
+
+### Buscape GET orders IN HOSTING [GET]
+
++ Response 200 (application/json)
+
+        {
+            "orderID":"string",
+            "orderStatus":"string",
+            "orderedItems":[
+                {
+                "sku":"number",
+                "skuSellerId":"string",
+                "quantity":"number",
+                "price":"number",
+                "discount":"number"
+                }
+            ],
+            "paymentMethods":[
+                {
+                "method":"string",
+                "amount":"number",
+                "installments":"number",
+                "paymentDueAt":"date",
+                "approvedAt":"date"
+                }
+            ],
+            "sellerOrder":"string",
+            "totalFreight":"number",
+            "purchaseAt":"date",
+            "lastUpdateAt":"date",
+            "clientProfileData":{
+                "email":"string",
+                "firstName":"string",
+                "lastName":"string",
+                "documentType":"string",
+                "document":"string",
+                "phone":"number",
+                "corporate":{
+                "name":"string",
+                "tradeName":"string",
+                "stateInscription":"string",
+                "phone":"string"
+            }
+            },
+           "shippingInfo":[
+              {
+                 "address":{
+                    "addressType":"string",
+                    "receiverName":"string",
+                    "postalCode":"string",
+                    "city":"string",
+                    "state":"string",
+                    "country":"string",
+                    "street":"string",
+                    "number":"string",
+                    "neighborhood":"string",
+                    "complement":"string",
+                    "reference":"string"
+             },
+         "deliveries":[
+            {
+               "item":{
+                  "sku":"string",
+                  "skuSellerId":"string"
+               },
+               "selectedSla":"string",
+               "lockTTL":"number",
+               "otd":{
+                  "shippingEstimate":"number",
+                  "transitTime":"number",
+                  "crossDockingTime":"number",
+                  "scheduledAt":"date",
+                  "scheduledPeriod":"string"
+               },
+               "trackingNumber":"string",
+               "sellerDeliveryId":"string",
+               "freightPrice":"number",
+               "freightCost":"number",
+               "additionalInfo":"string",
+               "carrier":{
+                  "name":"string",
+                  "cnpj":"string"
+               },
+               "tracking":{
+                  "description":"string",
+                  "occurredAt":"date",
+                  "controlPoint":"string"
+               },
+               "invoice" : {
+                  "number": "number",
+                  "value": "number",
+                  "url": "string",
+                  "issuanceDate": "date",
+                  "invoiceKey": "string"
+               },
+               "giftWrap":{
+                  "available":"number",
+                  "value":"number",
+                  "giftCard":{
+                     "from":"string",
+                     "to":"string",
+                     "message":"string"
+                  }
+               }
+            }
+         ]
+        }
+        ]
+        }
+
+
+# Buscape Orders IN ROUTE
+
+## Buscape GET de pedidos IN ROUTE [/orders/v2/status/in_route]
+
+### Buscape GET orders IN ROUTE [GET]
+
++ Response 200 (application/json)
+
+        {
+            "orderID":"string",
+            "orderStatus":"string",
+            "orderedItems":[
+                {
+                "sku":"number",
+                "skuSellerId":"string",
+                "quantity":"number",
+                "price":"number",
+                "discount":"number"
+                }
+            ],
+            "paymentMethods":[
+                {
+                "method":"string",
+                "amount":"number",
+                "installments":"number",
+                "paymentDueAt":"date",
+                "approvedAt":"date"
+                }
+            ],
+            "sellerOrder":"string",
+            "totalFreight":"number",
+            "purchaseAt":"date",
+            "lastUpdateAt":"date",
+            "clientProfileData":{
+                "email":"string",
+                "firstName":"string",
+                "lastName":"string",
+                "documentType":"string",
+                "document":"string",
+                "phone":"number",
+                "corporate":{
+                "name":"string",
+                "tradeName":"string",
+                "stateInscription":"string",
+                "phone":"string"
+            }
+            },
+           "shippingInfo":[
+              {
+                 "address":{
+                    "addressType":"string",
+                    "receiverName":"string",
+                    "postalCode":"string",
+                    "city":"string",
+                    "state":"string",
+                    "country":"string",
+                    "street":"string",
+                    "number":"string",
+                    "neighborhood":"string",
+                    "complement":"string",
+                    "reference":"string"
+             },
+         "deliveries":[
+            {
+               "item":{
+                  "sku":"string",
+                  "skuSellerId":"string"
+               },
+               "selectedSla":"string",
+               "lockTTL":"number",
+               "otd":{
+                  "shippingEstimate":"number",
+                  "transitTime":"number",
+                  "crossDockingTime":"number",
+                  "scheduledAt":"date",
+                  "scheduledPeriod":"string"
+               },
+               "trackingNumber":"string",
+               "sellerDeliveryId":"string",
+               "freightPrice":"number",
+               "freightCost":"number",
+               "additionalInfo":"string",
+               "carrier":{
+                  "name":"string",
+                  "cnpj":"string"
+               },
+               "tracking":{
+                  "description":"string",
+                  "occurredAt":"date",
+                  "controlPoint":"string"
+               },
+               "invoice" : {
+                  "number": "number",
+                  "value": "number",
+                  "url": "string",
+                  "issuanceDate": "date",
+                  "invoiceKey": "string"
+               },
+               "giftWrap":{
+                  "available":"number",
+                  "value":"number",
+                  "giftCard":{
+                     "from":"string",
+                     "to":"string",
+                     "message":"string"
+                  }
+               }
+            }
+         ]
+        }
+        ]
+        }
+
+
+# Buscape Orders RETRYING
+
+## Buscape GET de pedidos RETRYING [/orders/v2/status/retrying]
+
+### Buscape GET orders RETRYING [GET]
+
++ Response 200 (application/json)
+
+        {
+            "orderID":"string",
+            "orderStatus":"string",
+            "orderedItems":[
+                {
+                "sku":"number",
+                "skuSellerId":"string",
+                "quantity":"number",
+                "price":"number",
+                "discount":"number"
+                }
+            ],
+            "paymentMethods":[
+                {
+                "method":"string",
+                "amount":"number",
+                "installments":"number",
+                "paymentDueAt":"date",
+                "approvedAt":"date"
+                }
+            ],
+            "sellerOrder":"string",
+            "totalFreight":"number",
+            "purchaseAt":"date",
+            "lastUpdateAt":"date",
+            "clientProfileData":{
+                "email":"string",
+                "firstName":"string",
+                "lastName":"string",
+                "documentType":"string",
+                "document":"string",
+                "phone":"number",
+                "corporate":{
+                "name":"string",
+                "tradeName":"string",
+                "stateInscription":"string",
+                "phone":"string"
+            }
+            },
+           "shippingInfo":[
+              {
+                 "address":{
+                    "addressType":"string",
+                    "receiverName":"string",
+                    "postalCode":"string",
+                    "city":"string",
+                    "state":"string",
+                    "country":"string",
+                    "street":"string",
+                    "number":"string",
+                    "neighborhood":"string",
+                    "complement":"string",
+                    "reference":"string"
+             },
+         "deliveries":[
+            {
+               "item":{
+                  "sku":"string",
+                  "skuSellerId":"string"
+               },
+               "selectedSla":"string",
+               "lockTTL":"number",
+               "otd":{
+                  "shippingEstimate":"number",
+                  "transitTime":"number",
+                  "crossDockingTime":"number",
+                  "scheduledAt":"date",
+                  "scheduledPeriod":"string"
+               },
+               "trackingNumber":"string",
+               "sellerDeliveryId":"string",
+               "freightPrice":"number",
+               "freightCost":"number",
+               "additionalInfo":"string",
+               "carrier":{
+                  "name":"string",
+                  "cnpj":"string"
+               },
+               "tracking":{
+                  "description":"string",
+                  "occurredAt":"date",
+                  "controlPoint":"string"
+               },
+               "invoice" : {
+                  "number": "number",
+                  "value": "number",
+                  "url": "string",
+                  "issuanceDate": "date",
+                  "invoiceKey": "string"
+               },
+               "giftWrap":{
+                  "available":"number",
+                  "value":"number",
+                  "giftCard":{
+                     "from":"string",
+                     "to":"string",
+                     "message":"string"
+                  }
+               }
+            }
+         ]
+        }
+        ]
+        }
+
+
+# Buscape Orders REVERSAL
+
+## Buscape GET de pedidos REVERSAL [/orders/v2/status/reversal]
+
+### Buscape GET orders REVERSAL [GET]
+
++ Response 200 (application/json)
+
+        {
+            "orderID":"string",
+            "orderStatus":"string",
+            "orderedItems":[
+                {
+                "sku":"number",
+                "skuSellerId":"string",
+                "quantity":"number",
+                "price":"number",
+                "discount":"number"
+                }
+            ],
+            "paymentMethods":[
+                {
+                "method":"string",
+                "amount":"number",
+                "installments":"number",
+                "paymentDueAt":"date",
+                "approvedAt":"date"
+                }
+            ],
+            "sellerOrder":"string",
+            "totalFreight":"number",
+            "purchaseAt":"date",
+            "lastUpdateAt":"date",
+            "clientProfileData":{
+                "email":"string",
+                "firstName":"string",
+                "lastName":"string",
+                "documentType":"string",
+                "document":"string",
+                "phone":"number",
+                "corporate":{
+                "name":"string",
+                "tradeName":"string",
+                "stateInscription":"string",
+                "phone":"string"
+            }
+            },
+           "shippingInfo":[
+              {
+                 "address":{
+                    "addressType":"string",
+                    "receiverName":"string",
+                    "postalCode":"string",
+                    "city":"string",
+                    "state":"string",
+                    "country":"string",
+                    "street":"string",
+                    "number":"string",
+                    "neighborhood":"string",
+                    "complement":"string",
+                    "reference":"string"
+             },
+         "deliveries":[
+            {
+               "item":{
+                  "sku":"string",
+                  "skuSellerId":"string"
+               },
+               "selectedSla":"string",
+               "lockTTL":"number",
+               "otd":{
+                  "shippingEstimate":"number",
+                  "transitTime":"number",
+                  "crossDockingTime":"number",
+                  "scheduledAt":"date",
+                  "scheduledPeriod":"string"
+               },
+               "trackingNumber":"string",
+               "sellerDeliveryId":"string",
+               "freightPrice":"number",
+               "freightCost":"number",
+               "additionalInfo":"string",
+               "carrier":{
+                  "name":"string",
+                  "cnpj":"string"
+               },
+               "tracking":{
+                  "description":"string",
+                  "occurredAt":"date",
+                  "controlPoint":"string"
+               },
+               "invoice" : {
+                  "number": "number",
+                  "value": "number",
+                  "url": "string",
+                  "issuanceDate": "date",
+                  "invoiceKey": "string"
+               },
+               "giftWrap":{
+                  "available":"number",
+                  "value":"number",
+                  "giftCard":{
+                     "from":"string",
+                     "to":"string",
+                     "message":"string"
+                  }
+               }
+            }
+         ]
+        }
+        ]
+        }
+
+
+# Buscape Orders DELIVERED
+
+## Buscape GET de pedidos DELIVERED [/orders/v2/status/delivered]
+
+### Buscape GET orders DELIVERED [GET]
+
++ Response 200 (application/json)
+
+        {
+            "orderID":"string",
+            "orderStatus":"string",
+            "orderedItems":[
+                {
+                "sku":"number",
+                "skuSellerId":"string",
+                "quantity":"number",
+                "price":"number",
+                "discount":"number"
+                }
+            ],
+            "paymentMethods":[
+                {
+                "method":"string",
+                "amount":"number",
+                "installments":"number",
+                "paymentDueAt":"date",
+                "approvedAt":"date"
+                }
+            ],
+            "sellerOrder":"string",
+            "totalFreight":"number",
+            "purchaseAt":"date",
+            "lastUpdateAt":"date",
+            "clientProfileData":{
+                "email":"string",
+                "firstName":"string",
+                "lastName":"string",
+                "documentType":"string",
+                "document":"string",
+                "phone":"number",
+                "corporate":{
+                "name":"string",
+                "tradeName":"string",
+                "stateInscription":"string",
+                "phone":"string"
+            }
+            },
+           "shippingInfo":[
+              {
+                 "address":{
+                    "addressType":"string",
+                    "receiverName":"string",
+                    "postalCode":"string",
+                    "city":"string",
+                    "state":"string",
+                    "country":"string",
+                    "street":"string",
+                    "number":"string",
+                    "neighborhood":"string",
+                    "complement":"string",
+                    "reference":"string"
+             },
+         "deliveries":[
+            {
+               "item":{
+                  "sku":"string",
+                  "skuSellerId":"string"
+               },
+               "selectedSla":"string",
+               "lockTTL":"number",
+               "otd":{
+                  "shippingEstimate":"number",
+                  "transitTime":"number",
+                  "crossDockingTime":"number",
+                  "scheduledAt":"date",
+                  "scheduledPeriod":"string"
+               },
+               "trackingNumber":"string",
+               "sellerDeliveryId":"string",
+               "freightPrice":"number",
+               "freightCost":"number",
+               "additionalInfo":"string",
+               "carrier":{
+                  "name":"string",
+                  "cnpj":"string"
+               },
+               "tracking":{
+                  "description":"string",
+                  "occurredAt":"date",
+                  "controlPoint":"string"
+               },
+               "invoice" : {
+                  "number": "number",
+                  "value": "number",
+                  "url": "string",
+                  "issuanceDate": "date",
+                  "invoiceKey": "string"
+               },
+               "giftWrap":{
+                  "available":"number",
+                  "value":"number",
+                  "giftCard":{
+                     "from":"string",
+                     "to":"string",
+                     "message":"string"
+                  }
+               }
+            }
+         ]
+        }
+        ]
+        }
+
+
+# Buscape GET ORDERS/ID
+
+## Buscape GET de pedidos POR ID [/orders/v2/1]
+
+### Buscape GET orders POR ID [GET]
+
++ Response 200 (application/json)
+
+        {
+            "orderID":"01_string",
+            "orderStatus":"new",
+            "orderedItems":[
+                {
+                "sku":"10",
+                "skuSellerId":"100_string",
+                "quantity":"10",
+                "price":"100.0",
+                "discount":"10.0"
+                }
+            ],
+            "paymentMethods":[
+                {
+                "method":"string",
+                "amount":"number",
+                "installments":"number",
+                "paymentDueAt":"date",
+                "approvedAt":"date"
+                }
+            ],
+            "sellerOrder":"string",
+            "totalFreight":"number",
+            "purchaseAt":"date",
+            "lastUpdateAt":"date",
+            "clientProfileData":{
+                "email":"string",
+                "firstName":"string",
+                "lastName":"string",
+                "documentType":"string",
+                "document":"string",
+                "phone":"number",
+                "corporate":{
+                "name":"string",
+                "tradeName":"string",
+                "stateInscription":"string",
+                "phone":"string"
+            }
+            },
+           "shippingInfo":[
+              {
+                 "address":{
+                    "addressType":"string",
+                    "receiverName":"string",
+                    "postalCode":"string",
+                    "city":"string",
+                    "state":"string",
+                    "country":"string",
+                    "street":"string",
+                    "number":"string",
+                    "neighborhood":"string",
+                    "complement":"string",
+                    "reference":"string"
+             },
+         "deliveries":[
+            {
+               "item":{
+                  "sku":"string",
+                  "skuSellerId":"string"
+               },
+               "selectedSla":"string",
+               "lockTTL":"number",
+               "otd":{
+                  "shippingEstimate":"number",
+                  "transitTime":"number",
+                  "crossDockingTime":"number",
+                  "scheduledAt":"date",
+                  "scheduledPeriod":"string"
+               },
+               "trackingNumber":"string",
+               "sellerDeliveryId":"string",
+               "freightPrice":"number",
+               "freightCost":"number",
+               "additionalInfo":"string",
+               "carrier":{
+                  "name":"string",
+                  "cnpj":"string"
+               },
+               "tracking":{
+                  "description":"string",
+                  "occurredAt":"date",
+                  "controlPoint":"string"
+               },
+               "invoice" : {
+                  "number": "number",
+                  "value": "number",
+                  "url": "string",
+                  "issuanceDate": "date",
+                  "invoiceKey": "string"
+               },
+               "giftWrap":{
+                  "available":"number",
+                  "value":"number",
+                  "giftCard":{
+                     "from":"string",
+                     "to":"string",
+                     "message":"string"
+                  }
+               }
+            }
+         ]
+        }
+        ]
+        }
+
+
+# Buscape POST ESTOQUE
+
+## Buscape POST de estoque [/stock]
+
+### Buscape POST Estoque [POST]
+
++ Request (application/json)
+
+    + Headers
+    
+            app-token: S0JQ9E6q4hve
+    
+    + Body
+    
+            {
+                "buscapeID" : "string",
+                "orderedItems": [
+                  {
+                    "skuSellerId" : "string",
+                    "quantity" : "number",
+                    "postalCode" : "string"
+                  }
+                ]
+            }
+
++ Response 200 (application/json)
+
+        [  
+           {  
+              "buscapeID":"number",
+              "skuSellerId":"number",
+              "available":"number",
+              "crossDockingTime":"number",
+              "message":"string"
+           }
+        ]
+
+
+
+# Buscape POST/ORDER
+
+## Buscape POST de pedido [/stock]
+
+### Buscape POST Pedido [POST]
+
++ Request (application/json)
+
+    + Headers
+    
+            app-token: S0JQ9E6q4hve
+    
+    + Body
+    
+            {
+               "eventDate":"date",
+               "sellerId":"number",
+               "orderUri":"string",
+               "order":"order"
+            }
+
++ Response 200 (application/json)
+
+
+
+# Buscape ACEITE/ACCEPTENCE
+
+## Buscape POST ACEITE [/acceptence]
+
+### Buscape POST Aceite [POST]
+
++ Request
+
+           {
+                "eventDate":"date",
+                "accepted" : "boolean",
+                "sellerOrder" : "string",
+                "message" : "string"
+            }
+
++ Response 200 (application/json)
+
+
+
+# Buscape ORDERS - ATUALIZA TRACKING
+
+## Atualiza Tracking de Pedido [/orders/v2/1/tracking]
+
+### Atualiza Traacking de Pedido [POST]
+
++ Request (application/json)
+
+        [
+           {
+              "item":{
+                 "sku":"string",
+                 "skuSellerId":"string"
+              },
+              "selectedSla":"string",
+              "lockTTL":"number",
+              "otd":{
+                 "shippingEstimate":"number",
+                 "transitTime":"number",
+                 "crossDockingTime":"number",
+                 "scheduledAt":"date",
+                 "scheduledPeriod":"string"
+              },
+              "trackingNumber":"string",
+              "sellerDeliveryId":"string",
+              "freightPrice":"number",
+              "freightCost":"number",
+              "additionalInfo":"string",
+              "carrier":{
+                 "name":"string",
+                 "cnpj":"string"
+              },
+              "invoice":{
+                 "number":"number",
+                 "value":"number",
+                 "url":"string",
+                 "issuanceDate":"date",
+                 "invoiceKey":"string"
+              },
+              "tracking":{
+                 "description":"string",
+                 "occurredAt":"date",
+                 "controlPoint":"string"
+              }
+           }
+        ]
