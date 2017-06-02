@@ -1470,9 +1470,126 @@ HOST: http://polls.apiblueprint.org/
 
 
 
-## Buscape GET de pedidos POR ID [/buscape/orders/{id}]
+## Buscape GET de pedidos POR ID [/buscape/orders/new/{id}]
 
-### Buscape GET orders POR ID [GET]
+### Buscape GET orders NEW POR ID [GET]
+
++ Parameters
+
+    + id
+
++ Response 200 (application/json)
+
+        {
+            "orderID":"1",
+            "orderStatus":"new",
+            "orderedItems":[
+                {
+                "sku":"1",
+                "skuSellerId":"94",
+                "quantity":"1",
+                "price":"99",
+                "discount":"0"
+                }
+            ],
+            "paymentMethods":[
+                {
+                "method":"CARTAO",
+                "amount":"109",
+                "installments":"1",
+                "paymentDueAt":"2017-05-24T16:50:54.497Z",
+                "approvedAt":"2017-05-24T16:50:54.497Z"
+                }
+            ],
+            "sellerOrder":"00001",
+            "totalFreight":"10",
+            "purchaseAt":"1998-12-06T17:05:54.412Z",
+            "lastUpdateAt":"2022-07-12T03:21:43.164Z",
+            "clientProfileData":{
+                "email":"teste@teste.com",
+                "firstName":"Teste",
+                "lastName":"Testando",
+                "documentType":"CPF",
+                "document":"147258369",
+                "phone":"1177777899",
+                "corporate":{
+                "name":"Corporate Teste",
+                "tradeName":"Corporate",
+                "stateInscription":"1",
+                "phone":"11"
+            }
+            },
+           "shippingInfo":[
+              {
+                 "address":{
+                    "addressType":"RESIDENCIAL",
+                    "receiverName":"vinni teste",
+                    "postalCode":"17560000",
+                    "city":"vera cruz",
+                    "state":"SP",
+                    "country":"BRASIL",
+                    "street":"teste",
+                    "number":"123",
+                    "neighborhood":"ACAPULCO",
+                    "complement":"testando",
+                    "reference":"perto do teste"
+             },
+         "deliveries":[
+            {
+               "item":{
+                  "sku":"1",
+                  "skuSellerId":"94"
+               },
+               "selectedSla":"",
+               "lockTTL":"0",
+               "otd":{
+                  "shippingEstimate":"5",
+                  "transitTime":"1",
+                  "crossDockingTime":"1",
+                  "scheduledAt":"2017-05-24T16:50:54.540Z",
+                  "scheduledPeriod":"MANHA"
+               },
+               "trackingNumber":"",
+               "sellerDeliveryId":"",
+               "freightPrice":"10",
+               "freightCost":"8",
+               "additionalInfo":"",
+               "carrier":{
+                  "name":"",
+                  "cnpj":""
+               },
+               "tracking":{
+                  "description":"accept",
+                  "occurredAt":"2017-05-24T16:50:54.540Z",
+                  "controlPoint":"accept"
+               },
+               "invoice" : {
+                  "number": "1",
+                  "value": "10",
+                  "url": "",
+                  "issuanceDate": "2017-05-24T16:50:54.540Z",
+                  "invoiceKey": ""
+               },
+               "giftWrap":{
+                  "available":"false",
+                  "value":"0",
+                  "giftCard":{
+                     "from":"",
+                     "to":"",
+                     "message":""
+                  }
+               }
+            }
+         ]
+        }
+        ]
+        }
+
+
+
+## Buscape GET de pedidos POR ID [/buscape/orders/cancelled/{id}]
+
+### Buscape GET orders CANCELLED POR ID [GET]
 
 + Parameters
 
